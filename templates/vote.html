@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Vote</h1>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active">Vote</li>
+    </ol>
+
+    <div class="jumbotron">
+        <form action="/add_transaction" method="POST">
+            <div class="form-group">
+                <label for="voter">voter:</label>
+                <input type="text" class="form-control" id="voter" name="voter" autofocus required>
+            </div>
+            <div class="form-group">
+                <label for="voteFor">voteFor:</label>
+                <input type="text" class="form-control" id="voteFor" name="voteFor" required>
+            </div>
+            <div class="form-group">
+                <label for="constituency">constituency:</label>
+                <input type="text" class="form-control" id="constituency" name="constituency" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="alert"></div>
+    </div>
+</div>
+
+{% endblock %}

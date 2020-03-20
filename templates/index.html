@@ -1,0 +1,69 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<!-- Intro -->
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>Welcome to vote4u</h1>
+        <p>The Most secure and transparent blockchain based online voting system for modern era.</p>
+    </div>
+</div>
+
+<!-- Links -->
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            Featured
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title">Voter Registration</h5>
+            <p class="card-text">Click to Register</p>
+            <a href="/register" class="btn btn-primary">Register</a>
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title">Voter Login</h5>
+            <p class="card-text">Click to Login</p>
+            <a href="/login" class="btn btn-primary">Login</a>
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title">Voter Home</h5>
+            <p class="card-text">Click to view Voter's Dashboard</p>
+            <a href="/voter/home" class="btn btn-primary">Home</a href="/voter/home">
+        </div>
+
+    </div>
+</div>
+
+<!-- Features -->
+<div class="container-fluid">
+    <div style="
+            background-image: url('../static/img/img_parallax.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color:white">
+
+        <div class="text-center my-5 py-5" style="background-color:rgba(0,0,0,0.5);">
+            <h1>Who can use vote4u</h1>
+            <ul>
+                <li>
+                    <strong>Organizations</strong>
+                </li>
+                <li>
+                    <strong>Government</strong>
+                </li>
+                <li>
+                    <strong>Students</strong>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

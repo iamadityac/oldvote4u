@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Home</h1>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/voter/home">Voter</a></li>
+        <li class="breadcrumb-item active">Home</li>
+    </ol>
+
+    <h1>Welcome {{ session['voter'] }} </h1>
+
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Profile</h5>
+                <p class="card-text">To complete or Update your profile information go to Profile.</p>
+                <a href="/voter/profile" class="btn btn-primary">Profile</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            Upcoming Elections :
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title">Presidential Election</h5>
+            <p class="card-text">click to vote</p>
+            <a href="/vote" class="btn btn-primary">Vote</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
